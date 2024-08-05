@@ -1,46 +1,73 @@
-# Análisis del Credit Scoring
 
-## Autores
-- Cedeño Ronald
-- Pacheco Santiago
+# Proyecto de Predicción de Incumplimiento de Préstamos
 
-## Universidad de las Américas (UDLA)
+## Descripción
 
----
+Este proyecto contiene un Jupyter Notebook utilizado para el análisis y la predicción de incumplimiento de préstamos. El objetivo principal es aplicar técnicas de machine learning para predecir el estado de incumplimiento de préstamos basado en diversas características.
 
-## Variables con Correlación Positiva más Alta
+## Contenido
 
-- **credit_type_EQUI (0.602224)**:
-  Esta variable tiene la correlación positiva más alta con Status. Esto significa que los préstamos asociados con el tipo de crédito EQUI tienen una mayor probabilidad de estar en default.
-  
-- **co-applicant_credit_type_EXP (0.155227)**:
-  Esta variable muestra que si el co-aplicante tiene un tipo de crédito EXP, hay una probabilidad mayor de default. La correlación es significativa pero mucho menor que la de credit_type_EQUI.
-  
-- **submission_of_application_to_inst (0.128460)**:
-  La presentación de la solicitud a una institución (to_inst) también está positivamente correlacionada con la probabilidad de default, aunque de manera moderada.
+- `LoanDefaultv3.ipynb`: Este es el archivo principal del notebook que contiene todo el análisis y modelado de datos.
+- `data/`: Carpeta que debería contener los archivos de datos utilizados en el análisis (asegúrate de añadir esta carpeta si no existe).
+- `images/`: Carpeta para guardar las imágenes generadas a partir de las visualizaciones del notebook.
+- `results/`: Carpeta para guardar los resultados y salidas del análisis.
 
-## Variables con Correlación Negativa más Alta
+## Requisitos
 
-- **lump_sum_payment_not_lpsm (-0.189551)**:
-  Esta variable tiene la correlación negativa más alta con Status, indicando que los préstamos que no tienen un pago único (lump sum) están menos propensos a estar en default.
-  
-- **Neg_ammortization_not_neg (-0.155048)**:
-  Los préstamos sin amortización negativa (not_neg) tienen menos probabilidad de estar en default, lo que sugiere que los términos de amortización son un factor importante en la estabilidad del préstamo.
-  
-- **credit_type_CRIF (-0.134012)**:
-  Los préstamos asociados con el tipo de crédito CRIF tienen menos probabilidad de estar en default, lo que contrasta con la alta correlación positiva observada con credit_type_EQUI.
+Para ejecutar este notebook, necesitas tener instalados los siguientes paquetes:
 
-## Resumen
+- Python 3.x
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
 
-- **DebToIncomeRatio (0.098567)**:
-  El ratio de deuda a ingresos muestra una correlación positiva con el default, indicando que los prestatarios con una mayor proporción de deuda en relación con sus ingresos tienen más probabilidad de incumplir.
+Puedes instalar los paquetes necesarios ejecutando el siguiente comando:
 
-- **LoanToValueProperty (0.094923)**:
-  El ratio préstamo-valor de la propiedad también muestra una correlación positiva, sugiriendo que a mayor ratio, mayor es el riesgo de default.
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
 
-- **Credit_Score (0.004910)**:
-  El puntaje de crédito tiene una correlación muy baja y positiva con el default, lo que puede ser contraintuitivo. Esto podría indicar la necesidad de revisar cómo se está utilizando el puntaje de crédito en el modelo o la calidad de los datos.
+## Uso
 
-## Conclusión
+1. Clona este repositorio en tu máquina local.
+2. Navega hasta el directorio del proyecto.
+3. Abre Jupyter Notebook ejecutando el siguiente comando en tu terminal:
 
-Las variables **credit_type_EQUI**, **co-applicant_credit_type_EXP**, y **submission_of_application_to_inst** son las que más influyen en la probabilidad de default de un préstamo, con correlaciones positivas significativas. Por otro lado, **lump_sum_payment_not_lpsm**, **Neg_ammortization_not_neg**, y **credit_type_CRIF** tienen correlaciones negativas significativas, indicando una menor probabilidad de default.
+```bash
+jupyter notebook
+```
+
+4. Abre el archivo `LoanDefaultv3.ipynb` en Jupyter Notebook.
+5. Ejecuta las celdas en orden para reproducir el análisis.
+
+## Estructura del Notebook
+
+1. **Importación de librerías**: Se importan las librerías necesarias para el análisis.
+2. **Carga de datos**: Se cargan los datos desde archivos locales.
+3. **Exploración de datos**: Se realiza un análisis exploratorio de los datos (EDA).
+4. **Limpieza de datos**: Se llevan a cabo procesos de limpieza y preprocesamiento de los datos.
+5. **Visualización de datos**: Se crean diversas visualizaciones para entender mejor los datos.
+6. **Modelado**: Se aplican modelos de machine learning para predecir el incumplimiento de préstamos.
+7. **Evaluación del modelo**: Se evalúa el rendimiento de los modelos aplicados.
+8. **Conclusiones**: Se resumen los hallazgos del análisis y se discuten posibles mejoras.
+
+## Contribuciones
+
+Si deseas contribuir a este proyecto, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz commit de ellos (`git commit -am 'Añadir nueva funcionalidad'`).
+4. Haz push de la rama (`git push origin feature/nueva-funcionalidad`).
+5. Crea un nuevo Pull Request.
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+## Contacto
+
+Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto conmigo a través de [tu-email@example.com](mailto:tu-email@example.com).
