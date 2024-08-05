@@ -70,4 +70,4 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para má
 
 ## Contacto
 
-Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto conmigo a través de [tu-email@example.com](mailto:tu-email@example.com).
+Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto conmigo a través de [sanfer1ec@hotmail.com](mailto:sanfer1ec@hotmail.com). o [Santiago.Pacheco@udla.edu.ec](mailto:Santiago.Pacheco@udla.edu.ec)
