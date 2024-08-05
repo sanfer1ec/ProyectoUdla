@@ -7,7 +7,7 @@ Este proyecto contiene un Jupyter Notebook utilizado para el análisis y la pred
 
 ## Contenido
 
-- `LoanDefaultv3.ipynb`: Este es el archivo principal del notebook que contiene todo el análisis y modelado de datos.
+- `LoanDefaultv1.ipynb`: Este es el archivo principal del notebook que contiene todo el análisis y modelado de datos.
 - `data/`: Carpeta que debería contener los archivos de datos utilizados en el análisis (asegúrate de añadir esta carpeta si no existe).
 - `images/`: Carpeta para guardar las imágenes generadas a partir de las visualizaciones del notebook.
 - `results/`: Carpeta para guardar los resultados y salidas del análisis.
